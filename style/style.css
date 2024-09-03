@@ -1,0 +1,163 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body{
+    height: 100%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ГОЛОВА */
+
+
+.container{
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+body{
+    font-family: "Inter", system-ui;
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 1.2;
+}
+
+.header{
+    background-color: #151515;
+}
+
+.header-main{
+    background-color: transparent;
+}
+
+.header_inner{
+    padding-top: 40px;
+    padding-bottom: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+
+.menu__list{
+    display: flex;
+    gap: 35px;
+}
+
+.menu__list-link{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* ГОЛОВА  конец */
+
+
+
+/* начинка */
+
+.main{
+    flex-grow: 1;
+}
+
+
+.top{
+color: #fff;
+text-align: center;
+padding-top: 105px;
+padding-bottom: 50px;
+
+}
+
+.title{
+padding-top: 105px;
+padding-bottom: 40px;
+font-size: 96px;
+font-weight: 700;
+}
+
+.top__link{
+    background-color: #151515;
+    padding: 23px;
+    max-width: 430px;
+    width: 100%;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 700
+}
+
+/* конец начинки */
+
+
+
+/* ПОДВАЛ */
+
+
+.footer{
+    background-color: #151515;
+    padding: 50 0 32px;
+    color: #fff;
+}
+
+.footer__menu{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.footer__menu-list{
+    max-width: 250px;
+}
+
+.footer__menu-title{
+    font-size: 24px;
+    font-weight: 700px;
+    padding-bottom: 20px;
+}
+
+.footer__menu-item + .footer__menu-item{
+    padding-top: 20px;
+}
+
+.app{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 52px;
+}
+
+.footer__copy{
+    max-width: 800px;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+.copy__nav-list{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* конец подвала */
