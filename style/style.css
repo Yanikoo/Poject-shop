@@ -22,10 +22,20 @@ a{
     color: inherit;
 }
 
+.section-title{
+    margin-bottom: 50px;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+
 .wrapper{
     min-height: 100%;
     display: flex;
     flex-direction: column;
+    background-color: #EEE8AA;
 }
 
 /* ГОЛОВА */
@@ -50,6 +60,10 @@ body{
 
 .header-main{
     background-color: transparent;
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    right: 0;
 }
 
 .header_inner{
@@ -71,11 +85,11 @@ body{
     text-transform: uppercase;
 }
 
-/* ГОЛОВА  конец */
+/* шапка     конец */
 
 
 
-/* начинка */
+/* ЗАСТАВКА ФОТО*/
 
 .main{
     flex-grow: 1;
@@ -85,8 +99,12 @@ body{
 .top{
 color: #fff;
 text-align: center;
-padding-top: 105px;
+padding-top: 250px;
 padding-bottom: 50px;
+position: absolute;
+z-index: 5;
+left: 0;
+right: 0;
 
 }
 
@@ -95,6 +113,7 @@ padding-top: 105px;
 padding-bottom: 40px;
 font-size: 96px;
 font-weight: 700;
+
 }
 
 .top__link{
@@ -108,7 +127,123 @@ font-weight: 700;
     font-weight: 700
 }
 
-/* конец начинки */
+
+.swiper-slide{ 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    height: 100vh;
+}
+
+.swiper::after{
+    content: '';
+    background-color: rgba(21, 21, 21, 0.6 );
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0
+}
+
+
+
+.swiper-pagination-bullet {
+    width: 120px;
+    height: 3px;
+    background-color: #151515;
+    border-radius: 0;
+    opacity: 1;
+
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets 
+.swiper-pagination-bullet{
+    margin: 0 15px;
+}
+
+
+.swiper-pagination-bullets.swiper-pagination-horizontal, 
+.swiper-pagination-custom, 
+.swiper-pagination-fraction{
+    bottom: 50px;
+}
+
+
+
+.swiper-pagination-bullet-active{
+    height: 6px;
+    background-color: #fff;
+}
+
+/* конец ЗАСТАВКА ФОТО */
+
+/* ПЕРВЫЙ БЛОК */
+
+.why-lease{
+    padding: 150px 0;
+}
+
+.why-lease__list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  
+    gap: 40px;
+    text-align: center;
+}
+
+.why-lease__item-img{
+    margin-bottom: 60px;
+}
+
+.why-lease__item-title{
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.why-lease__item-text{
+text-align: left;
+}
+
+
+/* конец ПЕРВЫЙ БЛОК */
+
+
+/* ВТОРОЙ БЛОК  */
+
+
+.how-does{
+    padding-bottom: 150px;
+}
+
+.how-does__inner{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.how__does-title{
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 50px;
+}
+
+.how__does-list{
+    padding: 50px 0 70px;
+    counter-reset: myCounter;
+}
+
+.how__does-item{
+    list-style-type: none;
+}
+
+.how__does-item::before{
+    counter-increment: myCounter;
+    countent: counter(myCounter);
+    display: inline-block;
+    background-color: red;
+    font-size: 48px;
+}
+
 
 
 
